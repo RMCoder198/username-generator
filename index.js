@@ -1,14 +1,23 @@
 import React from "react";
 import ReactDom from "react-dom";
-
+import { createStore } from "redux";
+import { Provider } from "react-redux";
+import UserName from "UserName";
 class App extends React.Component {
   render() {
     return (
       <div>
-        <h1> Hello</h1>
+        <UserName store={store} />
       </div>
     );
   }
 }
 
-ReactDom.render(<App />, document.getElementById("app"));
+let store = createStore();
+
+ReactDom.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById("app")
+);
