@@ -12,6 +12,15 @@ class UserName extends React.Component{
                <br/>
                <input type="text" className="form-control" readonly/>
 
+               <h2 className="text-success ml-lg  text-center">Generate password</h2>
+                <p className="text-md text-center">Cant find any strong password </p>
+                 <p className="text-md text-center">Try  this!!!!</p>
+                  <input type="text" className="form-control" placeholder="Enter words Separated by space"/>
+                  <br/>
+                  <input type="text" className="form-control" readonly/>
+
+
+
            </div>
 
           )

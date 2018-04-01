@@ -1,5 +1,5 @@
 const InitialState = {
-  username:[0]
+  username:''
 }
 
 

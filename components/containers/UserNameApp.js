@@ -5,10 +5,9 @@ import {getState} from 'redux';
 class UsernameApp extends React.Component {
   render(){
    const stateProps = this.props.store.getState();
-   const userName= stateProps.username.map((name) =>
-  <UserName key = { name }
-  stateProps = { stateProps }
-     /> );
+   const userName=<UserName
+   stateProps = { stateProps }
+     /> ;
 
 
     return(
