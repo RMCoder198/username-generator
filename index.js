@@ -2,18 +2,19 @@ import React from "react";
 import ReactDom from "react-dom";
 import { createStore } from "redux";
 import { Provider } from "react-redux";
-import UserName from "UserName";
+import UserNameApp from "./components/containers/UserNameApp";
+import NameGenerator from './reducers/NameGenerator';
 class App extends React.Component {
   render() {
     return (
       <div>
-        <UserName store={store} />
+        <UserNameApp store={store} />
       </div>
     );
   }
 }
 
-let store = createStore();
+let store = createStore(NameGenerator);
 
 ReactDom.render(
   <Provider store={store}>
