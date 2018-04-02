@@ -12,8 +12,10 @@ class PassWord extends React.Component {
           className="form-control"
           placeholder="Enter words Separated by space"
         />
-        <button  type="button" className="btn btn-success generate text-center">Generate</button>
-         
+        <button type="button" className="btn btn-success generate text-center">
+          Generate
+        </button>
+
         <br />
         <input
           type="text"
