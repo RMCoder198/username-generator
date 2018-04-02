@@ -1,7 +1,13 @@
 body {
-  
+
 }
 .center{
   margin-left: 30%;
   margin-right: 30%;
+}
+.generate{
+  margin-top: 10px;
+  margin-left: 220px;
+  margin-bottom: 10px;
+  margin-right: 50px;
 }
