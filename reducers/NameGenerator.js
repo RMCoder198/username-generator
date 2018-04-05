@@ -4,9 +4,17 @@ const InitialState = {
 }
 
 
-function NameGenerator(state=InitialState,)
+function NameGenerator(state=InitialState,action)
 {
+  switch(action.type){
+    case 'GENERATE_USERNAME':
+    let Username = Object.assign({},state);
+    Username.username = 'r'
+    return Username
+    break;
+  default:
   return state;
+}
 }
 
 
