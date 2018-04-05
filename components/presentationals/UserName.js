@@ -1,6 +1,11 @@
 import React from "react";
 
 class UserName extends React.Component {
+
+
+
+
+
   render() {
     return (
       <div className="center">
@@ -12,7 +17,7 @@ class UserName extends React.Component {
           className="form-control"
           placeholder="Enter words Separated by space"
         />
-        <button type="button" className="btn btn-success generate text-center">
+        <button onClick={()=>this.props.dispatchAction("generate-username")} type="button" className="btn btn-success generate text-center">
           Generate
         </button>
 
