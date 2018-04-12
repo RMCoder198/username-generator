@@ -8,7 +8,7 @@ class UsernameApp extends React.Component {
 
 dispatchAction(input){
   switch (input) {
-    case "generate-username":
+    case "username":
       this.props.store.dispatch(GenerateUsername());
       break;
 
@@ -16,11 +16,15 @@ dispatchAction(input){
   }
 }
 
+  componentWillMount() {
+    this.props.store.subscribe(this.forceUpdate.bind(this));
+  }
 
   render(){
    const stateProps = this.props.store.getState();
    const userName=<UserName
    stateProps = { stateProps }
+      dispatchAction = {this.dispatchAction.bind(this)}
      /> ;
      const passWord=<PassWord
      stateProps = { stateProps }
