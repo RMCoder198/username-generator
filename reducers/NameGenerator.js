@@ -7,9 +7,10 @@ const InitialState = {
 function NameGenerator(state=InitialState,action)
 {
   switch(action.type){
-    case 'GENERATE_USERNAME':
-    let Username = Object.assign({},state);
-    Username.username = 'r'
+    case 'generate-username':
+    let Username = Object.assign({}, state, {
+      username: action.username
+    })
     return Username
     break;
   default:
