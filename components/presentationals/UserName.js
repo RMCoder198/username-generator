@@ -17,7 +17,7 @@ class UserName extends React.Component {
           className="form-control"
           placeholder="Enter words Separated by space"
         />
-        <button onClick={()=>this.props.dispatchAction("generate-username")} type="button" className="btn btn-success generate text-center">
+        <button onClick={() => this.props.dispatchAction("username")} type="button" className="btn btn-success generate text-center">
           Generate
         </button>
 
