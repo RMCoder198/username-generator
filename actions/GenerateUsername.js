@@ -1,8 +1,8 @@
-function GenerateUsername(){
+function GenerateUsername(change){
   const GENERATE_USERNAME = 'generate-username';
   return {
     type: GENERATE_USERNAME,
-    username: "Mike Mangialardi",
+    username: change,
 
   }
 }
