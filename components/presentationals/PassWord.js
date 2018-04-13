@@ -34,7 +34,7 @@ class PassWord extends React.Component {
             type="submit"
             value="Submit"
             className="btn btn-success generate text-center"
-            onClick={() => this.props.dispatchAction("username",this.state.value)}
+            onClick={() => this.props.dispatchAction("password",this.state.value)}
           >
             Generate
           </button>

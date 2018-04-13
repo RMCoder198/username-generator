@@ -3,6 +3,7 @@ import UserName from '../presentationals/UserName';
 import PassWord from '../presentationals/PassWord';
 import {getState} from 'redux';
 import GenerateUsername from '../../actions/GenerateUsername';
+import GeneratePassword from '../../actions/GeneratePassword';
 
 class UsernameApp extends React.Component {
 

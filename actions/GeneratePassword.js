@@ -1,4 +1,4 @@
-function GeneratePasswors(chnage){
+function GeneratePassword(change){
   const GENERATE_PASSWORD = 'generate-password';
   return {
     type: GENERATE_PASSWORD,

@@ -14,10 +14,10 @@ function NameGenerator(state=InitialState,action)
     return Username
     break;
     case 'generate-password':
-    let Username = Object.assign({}, state, {
+    let Password = Object.assign({}, state, {
       password: action.password
     })
-    return Username
+    return Password
     break;
   default:
   return state;
