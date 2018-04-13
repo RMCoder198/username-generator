@@ -6,11 +6,15 @@ import GenerateUsername from '../../actions/GenerateUsername';
 
 class UsernameApp extends React.Component {
 
-dispatchAction(input){
+dispatchAction(input,change){
   switch (input) {
     case "username":
-      this.props.store.dispatch(GenerateUsername());
+
+      this.props.store.dispatch(GenerateUsername(change));
       break;
+  case "password":
+  this.props.store.dispatch(GeneratePassword(change));
+  break;
 
 
   }
@@ -28,6 +32,7 @@ dispatchAction(input){
      /> ;
      const passWord=<PassWord
      stateProps = { stateProps }
+     dispatchAction = {this.dispatchAction.bind(this)}
        /> ;
 
 
