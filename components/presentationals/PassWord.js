@@ -12,21 +12,20 @@ class PassWord extends React.Component {
     this.setState({ value: event.target.value });
   }
   handleSubmit(event) {
-    alert("A password was submitted: " + this.state.value);
-    event.preventDefault();
+      event.preventDefault();
   }
 
   render() {
     return (
       <div className="center">
         <h2 className="text-success ml-lg  text-center">Generate password</h2>
-        <p className="text-md text-center">Cant find any strong password </p>
+        <p className="text-md text-center">Can't find any strong password </p>
         <p className="text-md text-center">Try this!!!!</p>
         <form onSubmit={this.handleSubmit}>
           <input
             type="text"
             className="form-control"
-            placeholder="Enter words Separated by space"
+            placeholder="Enter Characters"
             value={this.state.value}
             onChange={this.handleChange}
           />

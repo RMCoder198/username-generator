@@ -12,7 +12,7 @@ class UserName extends React.Component {
     this.setState({ value: event.target.value });
   }
   handleSubmit(event) {
-    alert("A name was submitted: " + this.state.value);
+
     event.preventDefault();
   }
 
@@ -20,13 +20,13 @@ class UserName extends React.Component {
     return (
       <div className="center">
         <h2 className="text-success ml-lg  text-center">Generate username</h2>
-        <p className="text-md text-center">Cant find any username </p>
+        <p className="text-md text-center">Can't find any username </p>
         <p className="text-md text-center">Try this!!!</p>
         <form onSubmit={this.handleSubmit}>
           <input
             type="text"
             className="form-control"
-            placeholder="Enter words Separated by space"
+            placeholder="Enter Characters"
             value={this.state.value}
             onChange={this.handleChange}
           />
